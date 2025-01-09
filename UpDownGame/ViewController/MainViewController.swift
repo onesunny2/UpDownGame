@@ -11,9 +11,9 @@ class MainViewController: UIViewController {
     
     @IBOutlet var gameTitle: [UILabel]!
     @IBOutlet var gameImageView: UIImageView!
-    @IBOutlet var setNumberLabel: UILabel!
     @IBOutlet var underLineImageView: UIImageView!
     @IBOutlet var startButton: UIButton!
+    @IBOutlet var numberTextfield: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
