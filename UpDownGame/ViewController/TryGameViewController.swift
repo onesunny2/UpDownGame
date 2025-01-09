@@ -9,6 +9,8 @@ import UIKit
 
 class TryGameViewController: UIViewController {
     
+    static let identifier = "TryGameViewController"
+    
     @IBOutlet var titleLabel: UILabel!
     @IBOutlet var tryCountLabel: UILabel!
     @IBOutlet var numberCollectionView: UICollectionView!
