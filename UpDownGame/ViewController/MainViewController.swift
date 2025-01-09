@@ -26,7 +26,17 @@ class MainViewController: UIViewController {
         numberLine()
         startingButton()
     }
-
+    
+    @IBAction func startButtonTapped(_ sender: UIButton) {
+        
+        let sb = UIStoryboard(name: "Main", bundle: nil)
+        
+        guard let vc = sb.instantiateViewController(withIdentifier: TryGameViewController.identifier) as? TryGameViewController else { return }
+        vc.modalPresentationStyle = .fullScreen
+        
+        present(vc, animated: true)
+    }
+    
     @IBAction func viewTapGuesture(_ sender: UITapGestureRecognizer) {
         view.endEditing(true)
     }
